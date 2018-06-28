@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 5</title>
+</head>
+<body>
+  <form>
+    <label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" />
+    <label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" />
+    <button type="button" name="button">Envoyer</button>
+  </form>
+  <script>
+  //utilisation de la fonction focus.
+  $('#lastName').focus(function(){
+    $('#lastName').css('border','1px solid green');
+  });
+  //utilisation de la fonction blur lors de la perte du focus
+  $('#firstName').focus(function(){
+    $('#firstName').css('border','1px solid green');
+  });
+  $('#lastName').blur(function(){
+    $('#lastName').css('border','1px solid red');
+  });
+  $('#firstName').blur(function(){
+    $('#firstName').css('border','1px solid red');
+  });
+  </script>
+</body>
+</html>
